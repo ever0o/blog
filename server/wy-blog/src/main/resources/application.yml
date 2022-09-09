@@ -1,2 +1,16 @@
 server:
   port: 8901
+
+spring:
+  application:
+    name: wy-blog
+  datasource:
+    driver-class-name: com.alibaba.druid.proxy.DruidDriver
+    druid:
+      url: jdbc:mysql://47.106.103.122:3306/wy_blog?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai
+      username: root
+      password:
+
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*Mapper.xml
+  type-aliases-package: com.example.wyblog.model
