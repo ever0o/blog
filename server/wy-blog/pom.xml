@@ -20,6 +20,9 @@
 		<mybatis-plus-boot-starter.version>3.5.1</mybatis-plus-boot-starter.version>
 		<hutool.version>5.7.20</hutool.version>
 		<knife4j.version>2.0.5</knife4j.version>
+		<velocity.version>1.7</velocity.version>
+		<commons-io.version>2.7</commons-io.version>
+		<commons-configuration.version>1.10</commons-configuration.version>
 		<hibernate-validator.version>6.2.0.Final</hibernate-validator.version>
 	</properties>
 
@@ -72,6 +75,35 @@
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-validator</artifactId>
 			<version>${hibernate-validator.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-configuration</groupId>
+			<artifactId>commons-configuration</artifactId>
+			<version>${commons-configuration.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>${commons-io.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.baomidou</groupId>
+			<artifactId>mybatis-plus-generator</artifactId>
+			<version>${mybatis-plus-boot-starter.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.velocity</groupId>
+			<artifactId>velocity</artifactId>
+			<version>${velocity.version}</version>
 		</dependency>
 
 		<dependency>
